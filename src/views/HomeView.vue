@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<script>k
+<script>
 
 import AlpesRaf from '../components/AlpesRaf';
 import AddComponents from '../components/AddComponents.vue';
@@ -47,7 +47,7 @@ methods:{
   }
 },
 created(){
-  axios.get("https://jsonplaceholder.typicode.com/todos?_limit=5")
+  axios.get("https://jsonplaceholder.typicode.com/todos")
   .then(alpes=>this.leafs = alpes.data)
   .catch(error => {
     return Promise.reject (error)
